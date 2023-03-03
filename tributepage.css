@@ -1,0 +1,55 @@
+.name {
+  font-family: Brush Script MT;
+  font-size: 7vw;
+  text-align: center;
+  text-decoration:double;
+}
+.tribute {
+  height:1750px;
+}
+.container {
+  border: 1px solid blue;
+  width:900px;
+  margin: auto;
+  width: 50%;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(1, 1, 143, 0.955);
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.description {
+  font-family: roboto, arial;
+  font-size: 3vw;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+.data {
+  font-family: roboto, arial;
+  font-size: 2vw;
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-align: center;
+  margin-top: 0px;
+  background-color:  rgb(227, 220, 220);
+}
+.container {
+  font-family: roboto, arial;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 0;
+  background-color:  rgb(227, 220, 220);
+}
+.list { 
+  display: inline-block;
+  text-align: left;
+}

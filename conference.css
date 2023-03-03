@@ -1,0 +1,344 @@
+p {
+margin-top: 0;
+margin-bottom: 0;
+}
+body {
+  font-family: itim;
+  margin: 0;
+  padding-top: 225px;
+  height: 2600px;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: coral;
+}
+a:active {
+  color: yellow;
+}
+@media (max-width: 750px) {
+  .responsive, .search-bar, .jeep, .register, .info, .icons  {
+  width: 250px;
+  }
+}
+@media (min-width: 750.02px) and (max-width: 1000px) {
+  .responsive, .search-bar, .jeep, .register, .info, .icons  {
+    width: 350px;
+  }
+}
+@media (min-width: 1000.02px) {
+  .responsive, .search-bar, .jeep, .register, .info, .icons  {
+    width: 500px;
+  }
+}
+.header {
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.left-section {
+  height: 225px;
+  width: 25%;
+  position: relative;
+  text-align: center;
+  background-color: aqua;
+}
+.responsive {
+  width: 100%;
+  height: 225px;
+}
+.search-bar {
+  height: 2em;
+  width: 12em;
+  cursor: pointer;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 1.5vw;
+}
+.middle-section {
+  height: 225px;
+  width: 50%;
+  background-color:aqua;
+  position: relative;
+  text-align: center;
+}
+.jeep {
+  color: coral;
+  font-size: 7vw;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.right-section {
+  position: relative;
+  height: 225px;
+  width: 25%;
+  background-color: coral;
+  text-align: center;
+}
+.register {
+  font-family: itim;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 4em;
+  width: 8em;
+  font-size: 2.5vw;
+  border: 1px solid black;
+  background-color:aqua;
+  color:coral;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+.body1 {
+  height: 400px;
+  position: relative;
+  display:block;
+  margin: 0;
+  background-image: url("conference/buffett.jpeg");
+  background-attachment:scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.event-title {
+  color: coral;
+  text-align: center;
+  font-size: 10vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 0px 5px;
+}
+
+.event-list {
+  color: coral;
+  font-size: 3vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  line-height: 2.5vw;
+  position: absolute;
+  margin: 0px;
+}
+.buffett {
+  font-size: 3.75vw;
+  font-weight: 700;
+  color: coral;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+}
+
+.body2 {
+  background-color: coral;
+  height: 400px;
+  position: relative;
+  margin: 0;
+}
+.gsm {
+  font-size: 8vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  color:aqua;
+  -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-color: black;
+}
+.jeep-club {
+  font-size: 2vw;
+  margin: 5px 5px;
+}
+.smoky-thing {
+  margin: 5px 5px;
+  font-size: 2.5vw;
+}
+.data {
+  font-size: 2vw;
+  margin: 5px 5px;
+}
+
+.body3 {
+  height: 400px;
+  position: relative;
+  background-color: aqua;
+  line-height: 5vw;
+}
+.merch {
+  font-size: 6.5vw;
+  color: coral;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 14px;
+  padding-top: 15px;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  font-style: italic;
+}
+.shirts {
+  font-size: 4vw;
+}
+.hats {
+  font-size: 4vw;
+}
+.decals {
+  font-size: 4vw;
+}
+.flags {
+  font-size: 4vw;
+}
+
+.body4 {
+  background-color: coral;
+  height: 400px;
+  position: relative;
+}
+.title {
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.green-truck {
+  height: 100%;
+  width: 100%;
+}
+.red-truck {
+  height: 100%;
+  width: 100%;
+}
+.blue-truck {
+  height: 100%;
+  width: 100%;
+}
+.blue-jeep {
+  height: 100%;
+  width: 100%;
+}
+.white-jeep {
+  height: 100%;
+  width: 100%;
+}
+.green-jeep {
+  height: 100%;
+  width: 100%;
+}
+.footer {
+  background-color:white;
+  height: 240px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left {
+  width: 25%;
+  position: relative;
+  line-height: 2em;
+  text-align: center;
+  line-height: 2em;
+  height: 240px;
+}
+.info {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.75vw;
+  text-align: center;
+  margin-right: 1em;
+  margin-left: .05em;
+  color: black;
+  cursor: pointer;
+  padding-top: 5em;
+}
+
+.footer-center {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  height: 240px;
+}
+.icons {
+  width: 100%;
+  position: absolute;
+}
+.instagram-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-right: 1.25em;
+  padding-top: 5em;
+  padding-left:1.5em;
+  cursor: pointer;
+}
+.facebook-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-right: 1.25em;
+  cursor: pointer;
+}
+.twitter-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-right: 1.25em;
+  cursor: pointer;
+}
+.telegram-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-right: 1.25em;
+  padding-top: 2em;
+  cursor: pointer;
+}
+.truthsocial-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-right: 1.25em;
+  padding-top: 2em;
+  cursor: pointer;
+}
+.youtube-icon {
+  height: 6vw;
+  width: 6vw;
+  padding-top: 2em;
+  padding-right: 1.25em;
+  cursor: pointer;
+}
+
+.footer-right {
+  width: 25%;
+  position: relative;
+  height: 240px;
+  padding-top: 2em;
+} 
