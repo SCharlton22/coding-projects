@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scott Charlton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <style>
+
+    body {
+      height: 100em;
+      font-family: roboto, arial;
+      background-color: white;
+      margin: 0;
+    }
+
+    a:link {
+        color: white;
+      }
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        color: blue;
+      }
+      a:active {
+        color: red;
+      }
+
+    .header {
+      font-family: roboto, arial;
+      height: auto;
+      width: auto;
+      margin: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-top: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+      border-radius: 25px 25px 0 0;
+      margin-bottom: 0;
+    }
+
+    .header-left {
+      width: 33.3%;
+    }
+
+    .about-me {
+      margin-right: 0;
+      margin-left: 2.5em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      color: white;
+      font-weight: bolder;
+      border: none;
+      cursor: pointer;
+      font-size: 2vw;
+      background-color: black;
+    }
+
+    .contact-me {
+      margin-right: 0;
+      margin-left: 2.5em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      color: white;
+      font-weight: bolder;
+      border: none;
+      cursor: pointer;
+      font-size: 2vw;
+      background-color: black;
+    }
+
+    .header-middle {
+      width: 33.3%;
+    }
+
+    .button-s {
+      margin-right: 0;
+      margin-left: .5em;
+      margin-top: .25em;
+      font-family: itim;
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 12em;
+      border: .03em solid blue;
+      background-color: black;
+      color: white;
+      font-size: 8.5vw;
+      padding: .010em .010em;
+    }
+
+    .header-right {
+      width: 33.5%;
+      border-radius: 1em;
+      position: relative;
+      background-color: red;
+      border-radius: 5em 1em 5em 0em;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .portfolio {
+      margin-right: 0;
+      margin-left: 2.5em;
+      text-decoration: underline;
+      margin-top: 1em;
+      font-weight: bolder;
+      border: none;
+      cursor: pointer;
+      font-size: 2vw;
+      background-color: black;
+    }
+
+    .dropbtn {
+      font-family: roboto, arial;
+      font-size: 2vw;
+      font-weight: bolder;
+      color: white;
+      height: 3em;
+      width: 10em;
+      margin-left: 2.25em;
+      margin-right: 3.25em;
+      margin-top: 4em;
+      border-radius: 1.75em;
+      border: .25em solid blue;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: black;
+      vertical-align:middle;
+    }
+
+    .dropbtn:hover {
+      background-color: white;
+      color: black;
+    }
+  
+    .dropbtn:active {
+      opacity:0.7;
+    } 
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:black;
+      border-radius: .40em;
+    }
+
+    .dropdown-content a {
+      color: white;
+      text-decoration:underline;
+      display: block;
+      font-size: 1.75vw;
+      text-align: left;
+      line-height: 1.5em;
+    }
+
+    .dropdown-content a:hover {
+      background-color: black;
+      color: blue;
+    }
+
+    .dropdown-content a:active {
+        color: red;
+    }
+
+    .show {
+      display:block;
+    }
+
+    .main {
+     background-color: black;
+     margin-left: 2em;
+     margin-right: 2em;
+     height: auto;
+     width: auto;
+    }
+
+    .name {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      color: white;
+      font-size: 7vw;
+      font-weight: 200;
+      margin-left: .75em;
+      padding-top: 0;
+    }
+
+    .profile-pic {
+      margin-top: 5.5em;
+      margin-bottom: 5em;
+      margin-right: 4em;
+      margin-left: 4em;
+      height: 22em;
+      width: 22em;
+      object-fit: contain;
+    }
+
+    .skills {
+      padding-top: 2em;
+    }
+
+    .html-button {
+      font-size: 2vw;
+      font-weight: bolder;
+      background-color: red;
+      color: white;
+      padding: 0em 0em;
+      height: 2.5em;
+      width: 6em;
+      margin-top: 1em;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
+      -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+      border-radius: 2em;
+      border: .1em solid blue;
+    }
+
+    .css-button {
+      font-size: 2vw;
+      font-weight: bolder;
+      background-color: white;
+      color: blue;
+      padding: 0em 0em;
+      height: 2.5em;
+      width: 6em;
+      -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+      border-radius: 2em;
+      border: .1em solid red;
+    }
+
+    .javascript-button {
+      font-size: 2vw;
+      font-weight: bolder;
+      background-color: blue;
+      color: white;
+      padding: 0em 0em;
+      height: 2.5em;
+      width: 8em;
+      margin-top: 2.5em;
+      margin-left: 5.5em;
+      -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+      border-radius: 2em;
+      border: .1em solid white;
+    }
+
+    .projects {
+      font-size: 6vw;
+      font-weight: 200;
+      color: white;
+      margin-top: 2.5em;
+      margin-left: .75em;
+    }
+
+    .survey {
+      font-size: 5vw;
+      font-weight: 200;
+      color: white;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      margin-left: 1em;
+    }
+
+    .parallax {
+      font-size: 5vw;
+      font-weight: 200;
+      color: white;
+      margin-bottom: 1em;
+      margin-left: 5.5em
+    }
+
+    .conference {
+      font-size: 5vw;
+      font-weight: 200;
+      color: white;
+      margin-left: 10.5em;
+      padding-bottom: 2em;
+    }
+
+    .footer {
+      background-color: black;
+      margin-left: 2em;
+      margin-right: 2em;
+      height: auto;
+      width: auto;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+      justify-content: center;
+      border-radius: 0 0 25px 25px;
+    }
+
+    .truth-social-icon {
+      height: 2.1em;
+      width: 2.1em;
+      margin-left: 10em;
+      margin-right: 2em;
+      margin-bottom: 1.85em;
+      cursor: pointer;
+    }
+
+    .facebook-icon {
+      height: 2.25em;
+      width: 2.25em;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 1.75em;
+      background-color: white;
+      border-radius: 3em;
+      cursor: pointer;
+    }
+
+    .twitter-icon {
+      height: 2.70em;
+      width: 2.70em;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 1.5em;
+      background-color: white;
+      border-radius: 3em;
+      cursor: pointer;
+    }
+
+    .linkedin-icon {
+      height: 2.25em;
+      width: 2.25em;
+      margin-left: 2em;
+      margin-right: 10em;
+      margin-bottom: 1.75em;
+      background-color: white;
+      border-radius: 3em;
+      cursor: pointer;
+    }
+
+    </style>
+    
+    <header class="header">
+
+      <div class="header-left">
+        <div class="about-me">
+          <div>
+            <a href="file:///Users/scottcharlton/Desktop/Bio.html" target="_blank">About Me</a>
+          </div>
+        </div>
+
+        <div class="contact-me">
+          <div>
+            <a href="file:///Users/scottcharlton/Desktop/contact-me.html" target="_blank">Contact Me</a>
+          </div>
+        </div>  
+      </div>
+
+      <div class="header-middle">
+        <button class="button-s">S</button>
+      </div>
+
+      <div class="header-right">
+        <div class="dropdown">
+          <button id="myBtn" class="dropbtn">Portfolio</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="file:///Users/scottcharlton/Desktop/Wikipedia%20Clone.html" target="_blank">Wikipedia</a>
+            <a href="file:///Users/scottcharlton/Desktop/checkerboard.html" target="_blank">Checkerboard</a>
+            <a href="file:///Users/scottcharlton/Desktop/Chessboard.html" target="_blank">Chessboard</a>
+            <a href="file:///Users/scottcharlton/Desktop/Product_landing-page.html" target="_blank">Landing Page</a>
+            <a href="file:///Users/scottcharlton/Desktop/TributePage.html" target="_blank">Tribute Page</a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("myBtn").onclick = function () {
+            myFunction()
+          };
+          function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+          }
+        </script>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+      <div class="skills">
+        <img class="profile-pic" align="right" src="file:///Users/scottcharlton/Downloads/Business%20Card%201.JPG" alt="profile-pic">
+        <p class="name">
+          My name<br>is <strong>Scott</strong>
+        </p>
+        <button class="html-button">HTML</button>
+        <button class="css-button">CSS</button><br>
+        <button class="javascript-button">Javascript</button>
+      </div>
+
+      <div class="projects">
+        Latest Projects
+      </div>
+
+      <div class="survey">
+        <a href="file:///Users/scottcharlton/Desktop/Survey-form.html" target="_blank">Survey</a>
+      </div>
+
+      <div class="parallax">
+        <a href="file:///Users/scottcharlton/Desktop/Parallax-website.html" target="_blank">Parallax</a>
+      </div>
+
+      <div class="conference">
+        <a href="file:///Users/scottcharlton/Desktop/Conference.html" target="_blank">Conference</a>
+      </div>
+
+    </main>
+
+
+    <footer class="footer">
+      <div>
+        <a href="https://truthsocial.com/"target="_blank"><img class="truth-social-icon" src="portfolio/portfolio-truth-social.png"></a>
+        <a href="https://www.facebook.com/"target="_blank"><img class="facebook-icon" src="portfolio/portfolio-facebook.png"></a>
+        <a href="https://twitter.com/"target="_blank"><img class="twitter-icon" src="portfolio/portfolio-twitter.png"></a>
+        <a href="https://www.linkedin.com/feed/"target="_blank"><img class="linkedin-icon" src="portfolio/portfolio-linkedin.png"></a>
+      </div>
+    </footer>
+  </body>
+</html>
